@@ -1,1 +1,1 @@
-# BotMk - Dark traduzido uma parte
+# BotMk - Dark traduzido
