@@ -1,20 +1,10 @@
-exports.m18 = (id, A187, tampilTanggal, whatsapp, youtube, tampilWaktu, instagram, nomer, aktif) => {
-	return ` 
-❉──────────❉
-
-    *${A187}*
-
-❉──────────❉
-
-📆 *${tampilTanggal}*
-📌STATUS BOT MK: *${aktif}*
-	
+const m12 = (prefix) => {
+	return `
 ━━━━━━━━━━━━━━━━━━━━━                   
     ╔══════════════╗
         ✯ MK MODS ✯
     ╚══════════════╝
 ━━━━━━━━━━━━━━━━━━━━━
-
  
        *Aqui é o @bot* 🤳⚡
 
@@ -27,3 +17,4 @@ Para chamar o Menu digite: *@Bot*
 ║     MAIKON
 ╚════════════════════`
 }
+exports.m18 = m18
