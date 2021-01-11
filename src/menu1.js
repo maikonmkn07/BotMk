@@ -8,9 +8,9 @@ const menu1 = (prefix) => {
      ╚══════════════╝
 ━━━━━━━━━━━━━━━━━━━━━
 
-         *Aqui é o @bot* 🤳⚡
+        *Aqui é o @bot* 🤳⚡
                
- 👉Coloque Comando escolhido👈
+👉Coloque Comando escolhido👈
 
  *Comando: 👉.m01* 
  *Descrição:* Link dos Apks Mods
