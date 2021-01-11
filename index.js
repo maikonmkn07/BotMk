@@ -21,6 +21,12 @@ const { m09 } = require('./src/m09')
 const { m10 } = require('./src/m10')
 const { m11 } = require('./src/m11')
 const { m12 } = require('./src/m12')
+const { m13 } = require('./src/m13')
+const { m14 } = require('./src/m14')
+const { m15 } = require('./src/m15')
+const { m16 } = require('./src/m16')
+const { m17 } = require('./src/m17')
+const { m18 } = require('./src/m18')
 const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, banner, start, info, success, close } = require('./lib/functions')
 const { fetchJson } = require('./lib/fetcher')
 const { recognize } = require('./lib/ocr')
@@ -38,7 +44,7 @@ const loli = new lolis()
 const welkom = JSON.parse(fs.readFileSync('./src/welkom.json'))
 const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
-prefix = '.'
+prefix = './@'
 blocked = []
 
 function kyun(seconds){
@@ -83,8 +89,9 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Olá @${num.split('@')[0]}\nBem vindo ao grupo! O grupo possui Bot pra ajudar, qualquer coisa so digitar: *.menu1* *${mdata.subject}*\nPor favor não seja um Fantasma ❤
-🚫Proibido pornografia.
+				teks = `Olá @${num.split('@')[0]}\n *Bem vindo ao grupo!* O grupo possui *BOT* pra ajudar, qualquer coisa so digitar: *.menu1*  
+				*${mdata.subject}*\n Por favor não seja um Fantasma ❤
+🚫 Proibido pornografia.
 
 🚫 Proibido anúncios.
 
@@ -238,6 +245,23 @@ async function starts() {
                 case 'm12':
 					client.sendMessage(from, m12(prefix), text)
 					break
+                case 'm13':
+					client.sendMessage(from, m13(prefix), text)
+					break
+                case 'm14':
+					client.sendMessage(from, m14(prefix), text)
+					break
+                case 'm15':
+					client.sendMessage(from, m15(prefix), text)
+					break
+                case 'm16':
+					client.sendMessage(from, m16(prefix), text)
+                case 'm17':
+					client.sendMessage(from, m17(prefix), text)
+					break					
+                case 'm18':
+					client.sendMessage(from, m18(prefix), text)
+					break				
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
@@ -391,7 +415,7 @@ async function starts() {
 					break
 				case 'dono':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://i.imgur.com/d1M6lOz.jpg`)
+					buffer = await getBuffer(`http://imgur.com/a/78IKR2E`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* MAIKON\n*YOUTUBE:* https://bit.ly/2MD43V2\n*WPP:* wa.me/+5517991134416\n*INSTA:* to sem aff kk\n\n\n*Digite *.bot* para ver comandos basicos para criar um bot'})
 					break
 				case 'belle2':
@@ -421,8 +445,8 @@ async function starts() {
 					break
 				case 'bomdia':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://i.imgur.com/7VL9cFf.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Bom dia, vcs sao Top ❤️'})
+					buffer = await getBuffer(`http://imgur.com/gallery/bYhFDxR`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Bom dia, vcs sao Top! ️'})
 					break
 				case 'boatarde':
 					memein = await kagApi.memeindo()
@@ -432,7 +456,7 @@ async function starts() {
 				case 'boanoite':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.imgur.com/yOFxSUR.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Boa noite fml ❤️'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Boa noite fml ️'})
 					break
 				case 'belle':
 					memein = await kagApi.memeindo()
@@ -654,7 +678,7 @@ async function starts() {
 						reply('Transmissão enviada com sucesso')
 					}
 					break
-        case 'promote':
+           case 'promote':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
