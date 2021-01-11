@@ -1,9 +1,9 @@
 const menu3 = (prefix) => {
 	return `
 	
-╭─────────────────╮
- *COMANDOS DO MAIKON*
-╰─────────────────╯
+     ╔══════════════╗
+        🔰   𝗕𝗢𝗧 𝗠𝗞  🔰  
+     ╚══════════════╝
  
 ➸ *${prefix}marcar*
 ➸ *${prefix}marcar2*

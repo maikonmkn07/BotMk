@@ -1,16 +1,14 @@
 const menu1 = (prefix) => {
 	return `
-
-
 ━━━━━━━━━━━━━━━━━━━━━                   
      ╔══════════════╗
-          ✯ MK MODS ✯
+        🔰   𝗕𝗢𝗧 𝗠𝗞  🔰  
      ╚══════════════╝
 ━━━━━━━━━━━━━━━━━━━━━
 
         *Aqui é o @bot* 🤳⚡
                
-👉Coloque Comando escolhido👈
+👉Digite o Comando escolhido👈
 
  *Comando: 👉.m01* 
  *Descrição:* Link dos Apks Mods
