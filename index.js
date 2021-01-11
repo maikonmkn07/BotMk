@@ -6,8 +6,21 @@ const {
     GroupSettingChange
 } = require('@adiwajshing/baileys')
 const { color, bgcolor } = require('./lib/color')
-const { help } = require('./src/help')
-const { help1 } = require('./src/help1')
+const { menu1 } = require('./src/menu1')
+const { menu2 } = require('./src/menu2')
+const { menu3 } = require('./src/menu3')
+const { m01 } = require('./src/m01')
+const { m02 } = require('./src/m02')
+const { m03 } = require('./src/m03')
+const { m04 } = require('./src/m04')
+const { m05 } = require('./src/m05')
+const { m06 } = require('./src/m06')
+const { m07 } = require('./src/m07')
+const { m08 } = require('./src/m08')
+const { m09 } = require('./src/m09')
+const { m10 } = require('./src/m10')
+const { m11 } = require('./src/m11')
+const { m12 } = require('./src/m12')
 const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, banner, start, info, success, close } = require('./lib/functions')
 const { fetchJson } = require('./lib/fetcher')
 const { recognize } = require('./lib/ocr')
@@ -172,12 +185,51 @@ async function starts() {
 			if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mRECV\x1b[1;37m]', time, color('Message'), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
 			switch(command) {
 				case 'help':
-				case 'menu':
-					client.sendMessage(from, help(prefix), text)
-					break
-					case 'help1':
+				case '@bot':
 				case 'menu1':
-					client.sendMessage(from, help1(prefix), text)
+					client.sendMessage(from, menu1(prefix), text)
+					break
+				case 'menu2':
+					client.sendMessage(from, menu2(prefix), text)
+					break
+                case 'menu3':
+					client.sendMessage(from, menu3(prefix), text)
+					break
+                case 'm01':
+					client.sendMessage(from, m01(prefix), text)
+					break
+                case 'm02':
+					client.sendMessage(from, m02(prefix), text)
+					break
+               case 'm03':
+					client.sendMessage(from, m03(prefix), text)
+					break
+               case 'm04':
+					client.sendMessage(from, m04(prefix), text)
+					break
+               case 'm05':
+					client.sendMessage(from, m05(prefix), text)
+					break
+               case 'm06':
+					client.sendMessage(from, m06(prefix), text)
+					break
+               case 'm07':
+					client.sendMessage(from, m07(prefix), text)
+					break
+               case 'm08':
+					client.sendMessage(from, m08(prefix), text)
+					break
+               case 'm09':
+					client.sendMessage(from, m09(prefix), text)
+					break
+                case 'm10':
+					client.sendMessage(from, m10(prefix), text)
+					break
+                 case 'm11':
+					client.sendMessage(from, m11(prefix), text)
+					break
+                case 'm12':
+					client.sendMessage(from, m12(prefix), text)
 					break
 				case 'info':
 					me = client.user
