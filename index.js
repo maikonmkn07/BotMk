@@ -44,7 +44,7 @@ const loli = new lolis()
 const welkom = JSON.parse(fs.readFileSync('./src/welkom.json'))
 const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
-prefix = '.'
+prefix = './@'
 blocked = []
 
 function kyun(seconds){
@@ -146,7 +146,7 @@ async function starts() {
 			const isCmd = body.startsWith(prefix)
 
 			mess = {
-				wait: '⌛ BOTMK convertendo, aguarde um pouco... ⌛',
+				wait: '⌛ Bot Mk convertendo, aguarde um pouco... ⌛',
 				success: '✔️ Deu certo, ufa kk ✔️',
 				error: {
 					stick: '⚠️ Falha, ocorreu um erro ao converter a imagem em figurinha ⚠️',
@@ -412,13 +412,13 @@ async function starts() {
 					break
 				case 'porno':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx3BgnL2qAHDTlfCPMAvdjuLGvOx402dSdhw&usqp=CAU`)
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx3BgnL2qAHDTlfCPMAvdjuLGvOx402dSdhw&usqp=CAU.jpg`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Adm proibiu porno no gp🙄'})
 					break
 				case 'dono':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`http://imgur.com/a/78IKR2E`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* MAIKON\n*YOUTUBE:* https://bit.ly/2MD43V2\n*WPP:* wa.me/+5517991134416\n*INSTA:* to sem aff kk\n\n\n*Digite *.bot* para ver comandos basicos para criar um bot'})
+					buffer = await getBuffer(`http://imgur.com/gallery/78IKR2E.jpg`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* MAIKON\n*YOUTUBE:* https://bit.ly/2MD43V2\n*WPP:* wa.me/+5544999013362 \n*INSTA:* to sem aff kk\n\n\n*Digite *.bot* para ver comandos basicos para criar um bot'})
 					break
 				case 'belle2':
 					memein = await kagApi.memeindo()
@@ -447,7 +447,7 @@ async function starts() {
 					break
 				case 'bomdia':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`http://imgur.com/gallery/bYhFDxR`)
+					buffer = await getBuffer(`http://imgur.com/gallery/bYhFDxR.jpg`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Bom dia, vcs sao Top! ️'})
 					break
 				case 'boatarde':
