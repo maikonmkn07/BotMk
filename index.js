@@ -44,7 +44,7 @@ const loli = new lolis()
 const welkom = JSON.parse(fs.readFileSync('./src/welkom.json'))
 const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
-prefix = './@'
+prefix = '.'
 blocked = []
 
 function kyun(seconds){
@@ -98,6 +98,7 @@ async function starts() {
 🚫 Proibido desrespeitar participante do grupo.
 
 🚫 Proibido outros links a não ser os do grupo.️`
+
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -215,31 +216,31 @@ async function starts() {
                 case 'm02':
 					client.sendMessage(from, m02(prefix), text)
 					break
-               case 'm03':
+                case 'm03':
 					client.sendMessage(from, m03(prefix), text)
 					break
-               case 'm04':
+                case 'm04':
 					client.sendMessage(from, m04(prefix), text)
 					break
-               case 'm05':
+                case 'm05':
 					client.sendMessage(from, m05(prefix), text)
 					break
-               case 'm06':
+                case 'm06':
 					client.sendMessage(from, m06(prefix), text)
 					break
-               case 'm07':
+                case 'm07':
 					client.sendMessage(from, m07(prefix), text)
 					break
-               case 'm08':
+                case 'm08':
 					client.sendMessage(from, m08(prefix), text)
 					break
-               case 'm09':
+                case 'm09':
 					client.sendMessage(from, m09(prefix), text)
 					break
                 case 'm10':
 					client.sendMessage(from, m10(prefix), text)
 					break
-                 case 'm11':
+                case 'm11':
 					client.sendMessage(from, m11(prefix), text)
 					break
                 case 'm12':
@@ -256,6 +257,7 @@ async function starts() {
 					break
                 case 'm16':
 					client.sendMessage(from, m16(prefix), text)
+					break
                 case 'm17':
 					client.sendMessage(from, m17(prefix), text)
 					break					
