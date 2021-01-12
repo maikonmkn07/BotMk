@@ -1,4 +1,4 @@
-const m12 = (prefix) => {
+const m18 = (prefix) => {
 	return `
 ━━━━━━━━━━━━━━━━━━━━━                   
     ╔══════════════╗
