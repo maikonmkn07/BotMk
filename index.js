@@ -44,7 +44,7 @@ const loli = new lolis()
 const welkom = JSON.parse(fs.readFileSync('./src/welkom.json'))
 const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
-prefix = './@'
+prefix = '.'
 blocked = []
 
 function kyun(seconds){
@@ -200,7 +200,7 @@ async function starts() {
 			if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mRECV\x1b[1;37m]', time, color('Message'), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
 			switch(command) {
 				case 'help':
-				case 'bot':
+				case '@bot':
 				case 'menu1':
 					client.sendMessage(from, menu1(prefix), text)
 					break
