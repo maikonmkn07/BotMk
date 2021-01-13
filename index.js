@@ -44,7 +44,7 @@ const loli = new lolis()
 const welkom = JSON.parse(fs.readFileSync('./src/welkom.json'))
 const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
-prefix = '.'
+prefix = '.,@'
 blocked = []
 
 function kyun(seconds){
@@ -89,8 +89,8 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Olá @${num.split('@')[0]}\n *Bem vindo ao grupo!* O grupo possui *BOT* pra ajudar, qualquer coisa so digitar: *.menu1*  
-				*${mdata.subject}*\n Por favor não seja um Fantasma ❤
+				teks = `🔰 Olá @${num.split('@')[0]}\n *Bem vindo ao grupo!* *${mdata.subject}*\n O grupo possui *BOT* pra chanar Menu, qualquer coisa so digitar: *.menu1* .Por favor não seja um Fantasma ❤
+				
 🚫 Proibido pornografia.
 
 🚫 Proibido anúncios.
@@ -200,7 +200,7 @@ async function starts() {
 			if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mRECV\x1b[1;37m]', time, color('Message'), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
 			switch(command) {
 				case 'help':
-				case '@bot':
+				case 'bot':
 				case 'menu1':
 					client.sendMessage(from, menu1(prefix), text)
 					break
@@ -211,6 +211,7 @@ async function starts() {
 					client.sendMessage(from, menu3(prefix), text)
 					break
                 case 'm01':
+                case 'link':
 					client.sendMessage(from, m01(prefix), text)
 					break
                 case 'm02':
@@ -417,8 +418,8 @@ async function starts() {
 					break
 				case 'dono':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`http://imgur.com/gallery/78IKR2E.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* Dark\n*YOUTUBE:* https://bit.ly/2MD43V2\n*WPP:* wa.me/+5517991134416\n*INSTA:* to sem aff kk\n\n\n*Digite *.bot* para ver comandos basicos para criar um bot'})
+					buffer = await getBuffer(`https://imgur.com/gallery/78IKR2E.jng`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* MK \n*SITE:* https://bit.ly/2MD43V2\n*WPP:* wa.me/+5544999013362\n*INSTA:* to sem aff kk\n\n\n*Digite *.bot* para ver comandos basicos para criar um bot'})
 					break
 				case 'belle2':
 					memein = await kagApi.memeindo()
@@ -427,8 +428,8 @@ async function starts() {
 					break
 				case 'bot':
 			     	memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://i.imgur.com/dPUVFF6.png`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*_Comandos basicos para bot:_*\n\n*pkg upgrade && pkg update*\n*pkg install git*\n*git clone (link da git)*\n*cd (repositório)*\n*bash install.sh*\n*npm start*\n\n*Dark Domina*'})
+					buffer = await getBuffer(`https://i.imgur.com/ph1UHgR.png`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*_Comandos basicos para bot:_*\n\n*pkg upgrade && pkg update*\n*pkg install git*\n*git clone (link da git)*\n*cd (repositório)*\n*bash install.sh*\n*npm start*\n\n*MK Domina*'})
 					break
 				case 'belle3':
 					memein = await kagApi.memeindo()
@@ -493,7 +494,7 @@ async function starts() {
 				case 'canal':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://imgur.com/gallery/xuTCBPO`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️*canal do dark:*\n\n https://bit.ly/3omUNCg'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️*Canal do MK:*\n\n https://linktr.ee/Gb_Yo_Yx_FmWhatsapp'})
 					break
 				case 'mia1':
 					memein = await kagApi.memeindo()
@@ -558,7 +559,7 @@ async function starts() {
 					client.sendMessage(from, buffer, audio, {mimetype: 'audio/mp4', filename: `${anu.title}.mp3`, quoted: mek})
 					break
 				case 'ytsearch':
-					if (args.length < 1) return reply('O que você está procurando? pau?')
+					if (args.length < 1) return reply('O que você está procurando?')
 					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/ytsearch?q=${body.slice(10)}&apiKey=${apiKey}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					teks = '=================\n'
@@ -793,7 +794,7 @@ async function starts() {
 					})
 					break
 				case 'simi':
-					if (args.length < 1) return reply('Textnya mana hum? ')
+					if (args.length < 1) return reply('Onde está o texto? ')
 					teks = body.slice(5)
 					anu = await simih(teks) //fetchJson(`https://mhankbarbars.herokuapp.com/api/samisami?text=${teks}`, {method: 'get'})
 					//if (anu.error) return reply('Simi ga tau kak')
