@@ -89,7 +89,11 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `🔰 Olá @${num.split('@')[0]}\n *Bem vindo ao grupo!* *${mdata.subject}*\n O grupo possui *BOT* pra chanar Menu, qualquer coisa so digitar: *.menu1* .Por favor não seja um Fantasma ❤
+				teks = `
+🔰 Olá @${num.split('@')[0]}\n
+✔️ Bem vindo! *${mdata.subject}*\n 
+✔️ O grupo possui *BOT*
+✔️ Não seja um Fantasma ❤
 				
 🚫 Proibido pornografia.
 
@@ -97,7 +101,9 @@ async function starts() {
 
 🚫 Proibido desrespeitar participante do grupo.
 
-🚫 Proibido outros links a não ser os do grupo.️`
+🚫 Proibido outros links a não ser os do grupo.️
+
+✔️ Para chamar o Menu digite: *.menu1* `
 
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
@@ -108,7 +114,10 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Saiu porque quiz, @${num.split('@')[0]}. Tchau! 😂👋`
+				teks = `
+📵 Saiu porque quiz, e nem pagou uma gelada 😂🍺.
+
+👉 @${num.split('@')[0]}.Tchau! 😂👋`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -418,8 +427,8 @@ async function starts() {
 					break
 				case 'dono':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://imgur.com/gallery/78IKR2E.jng`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* MK \n*SITE:* https://bit.ly/2MD43V2\n*WPP:* wa.me/+5544999013362\n*INSTA:* to sem aff kk\n\n\n*Digite *.bot* para ver comandos basicos para criar um bot'})
+					buffer = await getBuffer(`https://i.imgur.com/v3Xqhfm.jpg`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR: MK* \n*SITE:* https://bit.ly/2MD43V2\n*WPP:* wa.me/+5544999013362\n*INSTA:* to sem aff kk\n\n\n*Digite *.bot* para ver comandos basicos para criar um bot'})
 					break
 				case 'belle2':
 					memein = await kagApi.memeindo()
@@ -428,7 +437,7 @@ async function starts() {
 					break
 				case 'bot':
 			     	memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://i.imgur.com/ph1UHgR.png`)
+					buffer = await getBuffer(`https://i.imgur.com/T2G33WR.jpg`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*_Comandos basicos para bot:_*\n\n*pkg upgrade && pkg update*\n*pkg install git*\n*git clone (link da git)*\n*cd (repositório)*\n*bash install.sh*\n*npm start*\n\n*MK Domina*'})
 					break
 				case 'belle3':
@@ -453,7 +462,7 @@ async function starts() {
 					break
 				case 'bomdia':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://i.imgur.com/7VL9cFf.jpg`)
+					buffer = await getBuffer(`https://i.imgur.com/HjX6eYt.jpg`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Bom dia, vcs sao top! ️'})
 					break
 				case 'boatarde':
