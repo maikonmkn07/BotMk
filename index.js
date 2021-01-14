@@ -93,7 +93,7 @@ async function starts() {
 🔰 Olá @${num.split('@')[0]}\n
 ✔️ Bem vindo! *${mdata.subject}*\n 
 ✔️ O grupo possui *BOT*
-✔️ Não seja um Fantasma ❤
+✔️ Não seja um Fantasma!
 				
 🚫 Proibido pornografia.
 
@@ -103,7 +103,7 @@ async function starts() {
 
 🚫 Proibido outros links a não ser os do grupo.️
 
-✔️ Para chamar o Menu digite: *.menu1* `
+✔️ Para chamar o Menu digite: *.menu1 ou menu2*`
 
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
@@ -430,7 +430,7 @@ async function starts() {
 					break
 				case 'dono':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://imgur.com/v3Xqhfm.jpg`)
+					buffer = await getBuffer(`https://imgur.com/gallery/sL5jPXn.jpg`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR: MK* \n*SITE:* https://bit.ly/2MD43V2\n*WPP:* wa.me/+5544999013362\n*INSTA:* to sem aff kk\n\n\n*Digite *.bot* para ver comandos basicos para criar um bot'})
 					break
 				case 'belle2':
