@@ -10,64 +10,64 @@ const menu1 = (prefix) => {
                
  👉Digite um dos comandos👈
 
- *Comando: 👉.m01* 
+ *Comando: 👉${prefix}m01* 
  *Descrição:* Link dos Apks Mods
 
- *Comando: 👉.m02* 
+ *Comando: 👉${prefix}m02* 
  *Descrição:* Não baixa audio,vídeo,status 
 
- *Comando: 👉.m03* 
+ *Comando: 👉${prefix}m03* 
  *Descrição:* Sobre GBWhatsApp - Sam Mods
 
- *Comando: 👉.m04* 
+ *Comando: 👉${prefix}m04* 
  *Descrição:* Sobre Yxwhatsapp - Clebersonjr
 
- *Comando: 👉.m05*
+ *Comando: 👉${prefix}m05*
  *Descrição:* Sobre GBWhatsApp - Alex Mods
 
- *Comando: 👉.m06* 
+ *Comando: 👉${prefix}m06* 
  *Descrição:* Sobre Whatsapp Aero - Hazar
 
- *Comando: 👉.m07*
+ *Comando: 👉${prefix}m07*
  *Descrição:* Migrar pro GBWhatsApp sem perder as conversas
 
- *Comando: 👉.m08* 
+ *Comando: 👉${prefix}m08* 
  *Descrição:* Funções do Spotify da descrição
 
- *Comando: 👉.m09* 
+ *Comando: 👉${prefix}m09* 
  *Descrição:* Sobre menssagens temporárias
 
- *Comando: 👉.m10* 
+ *Comando: 👉${prefix}m10* 
  *Descrição:* Sobre Tiktok Pro
 
- *Comando: 👉.m11*
+ *Comando: 👉${prefix}m11*
  *Descrição:* Sobre Whatsapp Business Mod - Sam Mods
 
- *Comando: 👉.m12*
+ *Comando: 👉${prefix}m12*
  *Descrição:* Sobre YouTube Vanced
 
- *Comando: 👉.m13* 
+ *Comando: 👉${prefix}m13* 
  *Descrição:* Sobre Instagram Pro
 
- *Comando: 👉.m14* 
+ *Comando: 👉${prefix}m14* 
  *Descrição:* Sobre Pulsar Music Pro
 
- *Comando: 👉.m15* 
+ *Comando: 👉${prefix}m15* 
  *Descrição:* Sobre Tag Scanner Pro
 
- *Comando: 👉.m16* 
+ *Comando: 👉${prefix}m16* 
  *Descrição:* Sobre Whatsapp Business Mods
 
- *Comando: 👉.m17* 
+ *Comando: 👉${prefix}m17* 
  *Descrição:* Grupo de Comédia vídeos engraçados e de descontração.
 
- *Comando: 👉.m18* 
+ *Comando: 👉${prefix}m18* 
  *Descrição:* Grupo de Figurinhas
 
- *Comando: 👉.menu2*
+ *Comando: 👉${prefix}menu2*
  *Descrição:* Menu 2 com mais funções do Bot.
  
- *Digite a baixo o número desejado exemplo: *.m01* ou *.m02* ....👇
+ *Digite a baixo o número desejado exemplo: *${prefix}m01* ou *${prefix}m02* ....👇
  ━━━━━━━━━━━━━━━━━━━━`
 }
 

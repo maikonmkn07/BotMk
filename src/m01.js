@@ -1,15 +1,15 @@
 const m01 = (prefix) => {
 	return `
     ╔══════════════╗
-        ✯ MK MODS ✯
+          ✯ MK MODS ✯
     ╚══════════════╝
 ━━━━━━━━━━━━━━━━━━━━━
 
-                Olá!
+               Olá!
 
-     👇Links dos Apks Mods 👇
+    👇Links dos Apks Mods 👇
 
- https://linktr.ee/Gb_Yo_Yx_FmWhatsapp
+https://linktr.ee/Gb_Yo_Yx_FmWhatsapp
 
 
 Para chamar o Menu digite: *.Bot*

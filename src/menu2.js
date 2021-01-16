@@ -5,111 +5,115 @@ const menu2 = (prefix) => {
          🔰   𝗕𝗢𝗧 𝗠𝗞  🔰  
      ╚══════════════╝
 ━━━━━━━━━━━━━━━━━━━━━
-➸ Prefix:  *「${prefix} 」*
-➸ Status: *「 Online 」*
+
+        *Aqui é o @bot* 🤳⚡
 
        • ──── ✾ ──── •
        *FIGURINHAS*【✔】
        • ──── ✾ ──── •
       
-➸ Comando : *${prefix}sticker* ou *${prefix}stiker*
-➸ útil em : converter imagem/gif/vídeo em adesivo
-➸ uso : responder imagem/gif/video ou enviar imagem/gif/video com legenda\n
-➸ Comando : *${prefix}sticker nobg* ou *${prefix}stiker nobg*
-➸ útil em : converter imagem em adesivo removendo o fundo
-➸ uso : responder imagem ou enviar imagem com legenda/n
-➸ Comando : *${prefix}toimg*
-➸ útil em : converter adesivo em imagem
-➸ uso : adesivo de resposta\n
-➸ Comando : *${prefix}tsticker* ou *${prefix}tstiker*
-➸ útil em : converter texto em adesivo
-➸ uso : *${prefix}tsticker seu texto aqui*\n
+ *Comando: 👉${prefix}sticker* ou *${prefix}stiker*
+ *Descrição:* converter imagem/gif/vídeo em adesivo
+
+ *Comando: 👉${prefix}sticker nobg* ou *${prefix}stiker nobg*
+ *Descrição:* converter imagem em adesivo removendo o fundo
+
+ *Comando: 👉${prefix}toimg*
+ *Descrição:* converter adesivo em imagem
+
+ *Comando: 👉${prefix}tsticker* ou *${prefix}tstiker*
+ *Descrição:* converter texto em adesivo
+
 
        • ─── ✾ ─── •
        *MEMES*【✔】
        • ─── ✾ ─── •
       
-➸ Comando : *${prefix}meme*
-➸ útil em : mandar imagens aleatórias de meme [inglês]
-➸ uso : basta emviar o comando\n
-➸ Comando : *${prefix}memeindo*
-➸ útil em : mandar imagens aleatórias de meme [indo]
-➸ uso : basta enviar o comando
+ *Comando: 👉${prefix}meme*
+ *Descrição:* mandar imagens aleatórias de meme [inglês]
+
+ *Comando: 👉${prefix}memeindo*
+ *Descrição:* mandar imagens aleatórias de meme [indo]
+
 
        • ──── ✾ ──── •
        *OUTROS...*【✔】
        • ──── ✾ ──── •
       
-➸ Comando : *${prefix}gtts*
-➸ útil em : converter texto em fala/áudio
-➸ uso : *${prefix}gtts [cc] [text]*\nexemplo : *${prefix}gtts ja On2-chan*\n
-➸ Comando : *${prefix}loli*
-➸ útil em : mandar imagens aleatórias de loli
-➸ uso : basta enviar o comando\n
-➸ Comando : *${prefix}nsfwloli*
-➸ útil em : mandar imagens aleatórias de nsfw loli
-➸ uso : basta enviar o comando\n
-➸ Comando : *${prefix}url2img*
-➸ útil em : tirar screenshots da web
-➸ uso : *${prefix}url2img [tipe] [url]*\n
-➸ Comando : *${prefix}simi*
-➸ útil em : responder sua mensagem por simi
-➸ uso : *${prefix}simi sua mensagem*\n
-➸ Comando : *${prefix}ocr*
-➸ útil em : pegar o texto da foto e lhe enviar
-➸ uso : responder imagem ou enviar mensagem com legenda\n
-➸ Comando : *${prefix}wait*
-➸ útil em : pesquisar sobre o anime por imagem [ Que anime é este/que ]
-➸ uso : responder imagem ou enviar imagem com legenda\n
-➸ Comando : *${prefix}setprefix*
-➸ útil em : alterar o prefixo do bot
-➸ uso : *${prefix}setprefix [texto|opcional]*\nexemplo : *${prefix}setprefix ?*
-➸ Nota : Usado somente pelo proprietário do bot\n
+ *Comando: 👉${prefix}gtts*
+ *Descrição:* converter texto em fala/áudio
+
+ *Comando: 👉${prefix}loli*
+ *Descrição:* mandar imagens aleatórias de loli
+
+ *Comando: 👉${prefix}nsfwloli*
+ *Descrição:* mandar imagens aleatórias de nsfw loli
+
+ *Comando: 👉${prefix}url2img*
+ *Descrição:* tirar screenshots da web
+
+ *Comando: 👉${prefix}simi*
+ *Descrição:* responder sua mensagem por simi
+
+ *Comando: 👉${prefix}ocr*
+ *Descrição:* pegar o texto da foto e lhe enviar
+
+ *Comando: 👉${prefix}wait*
+ *Descrição:* pesquisar sobre o anime por imagem [ Que anime é este/que ]
+
+ *Comando: 👉${prefix}setprefix*
+ *Descrição:* alterar o prefixo do bot
+
+ *Nota:* Usado somente pelo proprietário do bot
 
        • ─── ✾ ─── •
        *GRUPO*【✔】
        • ─── ✾ ─── •
       
-➸ Comando : *${prefix}linkgroup*
-➸ útil em : enviar o link do grupo
-➸ uso : basta enviar o comando\n
-➸ Comando : *${prefix}marcar*
-➸ útil em : marcar todos os membros do grupo, incluindo administradores
-➸ uso : basta enviar o comando\n
-➸ Nota : Você precisa ser administrador do grupo\n
-➸ Comando : *${prefix}simih*
-➸ útil em : ativar o modo simi no grupo
-➸ uso : *${prefix}simih 1* para ativar o modo simi e *${prefix}simih 0* para 
-➸ desativar o modo simih
-➸ Nota : Você precisa ser administrador do grupo\n
-➸ Comando : *${prefix}add*
-➸ útil em : adicionar membro ao grupo
-➸ uso : *${prefix}add 5585xxxxx*\n
-➸ Nota : o bot precisa ser admin!\n
-➸ Comando : *${prefix}kick*
-➸ útil em : remover membros do grupo
-➸ uso : *${prefix}kick e o @da pessoa*\n
-➸ Nota : Você precisa ser admin e o bot também
-➸ Comando : *${prefix}promote*
-➸ útil em : tornar membro do grupo um administrador
-➸ uso : *${prefix}promote e o @da pessoa*\n
-➸ Nota : Você precisa ser admin e o bot também
-➸ Comando : *${prefix}demote*
-➸ útil em : tornar o administrador um membro comum
-➸ uso : *${prefix}demote e o @da pessoa*\n
-➸ Nota : Você precisa ser admin e o bot também
+ *Comando: 👉${prefix}linkgroup*
+ *Descrição:* enviar o link do grupo
+
+ *Comando: 👉${prefix}marcar*
+ *Descrição:* marcar todos os membros do grupo, incluindo administradores
+ *uso:* basta enviar o comando\n
+ *Nota:* Você precisa ser administrador do grupo\n
+
+ *Comando: 👉${prefix}simih*
+ *Descrição:* ativar o modo simi no grupo
+ *uso:* ${prefix}simih 1* para ativar o modo simi e *${prefix}simih 0* para desativar o modo simih
+ *Nota:* Você precisa ser administrador do grupo\n
+
+ *Comando: 👉${prefix}add*
+ *Descrição:* adicionar membro ao grupo
+ *uso:* ${prefix}add 5544xxxxx*\n
+ *Nota:* o bot precisa ser admin!\n
+
+ *Comando: 👉${prefix}kick*
+ *Descrição:* remover membros do grupo
+ *uso:* ${prefix}kick e o @da pessoa*\n
+ *Nota:* Você precisa ser admin e o bot também
+
+ *Comando: 👉${prefix}promote*
+ *Descrição:* tornar membro do grupo um administrador
+ *uso:* ${prefix}promote e o @da pessoa*\n
+ *Nota:* Você precisa ser admin e o bot também
+
+ *Comando: 👉${prefix}demote*
+ *Descrição:* tornar o administrador um membro comum
+ *uso:* ${prefix}demote e o @da pessoa*\n
+ *Nota:* Você precisa ser admin e o bot também
 
      • ────── ✾ ────── •
             *MAIKON*【✔】
      • ────── ✾ ────── •              
 
-➸ *${prefix}help1* ♔
+ Chama: *${prefix}.menu1 ou ${prefix}.menu2* ♔
     
 
-╔════════════════════
-  FEITO POR *MAIKON*
-  WA.me/5544999013362
-╚════════════════════`
+    ╔════════════════════
+        FEITO POR *MAIKON*
+       WA.me/5544999013362
+    ╚════════════════════`
 }
 
 exports.menu2 = menu2
