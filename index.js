@@ -276,7 +276,7 @@ async function starts() {
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*Nome do bot* : ${me.name}\n*Número do bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Contato de bloqueio total* : ${blocked.length}\n*O bot está ativo em* : ${kyun(uptime)}`
+					teks = `*Nome do bot* : ${me.name}\n*Número do bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
@@ -400,7 +400,7 @@ async function starts() {
 						reply(`Envie fotos com legendas ${prefix}sticker ou tags de imagem que já foram enviadas`)
 					}
 					case 'gtts':
-					if (args.length < 1) return client.sendMessage(from, 'Frase de resposta.', text, {quoted: mek})
+					if (args.length < 1) return client.sendMessage(from, 'Aguarde...⌛', text, {quoted: mek})
 					const gtts = require('./lib/gtts')(args[0])
 					if (args.length < 2) return client.sendMessage(from, 'Onde está o texto?', text, {quoted: mek})
 					dtt = body.slice(9)
@@ -825,8 +825,6 @@ async function starts() {
 					}
 					break
 				case 'welcome':
-					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Hmmmm')
 					if (Number(args[0]) === 1) {
 						if (isWelkom) return reply('Já ativo um')
