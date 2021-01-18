@@ -69,10 +69,10 @@ async function starts() {
 
 	fs.existsSync('./BarBar.json') && client.loadAuthInfo('./BarBar.json')
 	client.on('connecting', () => {
-		start('2', 'Connecting...')
+		start('2', 'Conectando...')
 	})
 	client.on('open', () => {
-		success('2', 'Connected')
+		success('2', 'Conectado')
 	})
 	await client.connect({timeoutMs: 30*1000})
         fs.writeFileSync('./BarBar.json', JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
@@ -101,9 +101,9 @@ async function starts() {
 
 🚫 Proibido desrespeitar participante do grupo.
 
-🚫 Proibido outros links a não ser os do grupo.️
+🚫 Proibido outros links a não ser os do grupo.
 
-✔️ Para chamar o Menu digite: *.menu1 ou menu2*`
+✔️ Dúvida chama o desenvolvedor https://bit.ly/2KgGUDv`
 
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
@@ -159,7 +159,7 @@ async function starts() {
 				success: '✔️ Deu certo, ufa kk ✔️',
 				error: {
 					stick: '⚠️ Falha, ocorreu um erro ao converter a imagem em figurinha ⚠️',
-					Iv: '❌ Link tidak valid ❌'
+					Iv: '❌ Link inválido ❌'
 				},
 				only: {
 					group: '❌ Este comando só pode ser usado em grupos! ❌',
@@ -171,7 +171,7 @@ async function starts() {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["5517991134416@s.whatsapp.net"] // replace this with your number
+			const ownerNumber = ["55999013362@s.whatsapp.net"] // replace this with your number
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -412,7 +412,7 @@ async function starts() {
 						exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (err) => {
 							fs.unlinkSync(ranm)
 							buff = fs.readFileSync(rano)
-							if (err) return reply('Gagal om:(')
+							if (err) return reply('O falha :(')
 							client.sendMessage(from, buff, audio, {quoted: mek, ptt:true})
 							fs.unlinkSync(rano)
 						})
@@ -641,7 +641,7 @@ async function starts() {
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += '\n\n'
 					for (let mem of groupMembers) {
-						teks += `*#* @${mem.jid.split('@')[0]}\n`
+						teks += `✔️*#* @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
 					mentions(teks, members_id, true)
@@ -651,7 +651,7 @@ async function starts() {
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += '\n\n'
 					for (let mem of groupMembers) {
-						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
+						teks += `✔️@${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
 					reply(teks)
@@ -661,7 +661,7 @@ async function starts() {
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += '\n\n'
 					for (let mem of groupMembers) {
-						teks += `╠➥ https://wa.me/${mem.jid.split('@')[0]}\n`
+						teks += `✔️https://wa.me/${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
 					client.sendMessage(from, teks, text, {detectLinks: false, quoted: mek})
@@ -733,7 +733,7 @@ async function starts() {
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (args.length < 1) return reply('quem você deseja adicionar, um gênio??')
+					if (args.length < 1) return reply('Quem você deseja adicionar, um gênio??')
 					if (args[0].startsWith('08')) return reply('Use o código do país amigo')
 					try {
 						num = `${args[0].replace(/ /g, '')}@s.whatsapp.net`
@@ -757,7 +757,7 @@ async function starts() {
 						mentions(teks, mentioned, true)
 						client.groupRemove(from, mentioned)
 					} else {
-						mentions(`KKKKKKKKKK acabou de levar ban, bobao : @${mentioned[0].split('@')[0]}`, mentioned, true)
+						mentions(`HaHaHa acabou de levar Ban 🚫: @${mentioned[0].split('@')[0]}`, mentioned, true)
 						client.groupRemove(from, mentioned)
 					}
 					break
@@ -821,7 +821,7 @@ async function starts() {
 						fs.writeFileSync('./src/simi.json', JSON.stringify(samih))
 						reply('Modo simi desativado com sucesso neste grupo ✔️')
 					} else {
-						reply('1 para ativar, 0 para desativar, lerdão você em 🤦')
+						reply('1 para ativar, 0 para desativar,🤦')
 					}
 					break
 				case 'welcome':
@@ -876,7 +876,7 @@ async function starts() {
 						console.log(muehe)
 						reply(muehe)
 					} else {
-						console.log(color('[ERROR]','red'), 'Unregistered Command from', color(sender.split('@')[0]))
+						console.log(color('[ERROR]','red'), 'Comando não registrado', color(sender.split('@')[0]))
 					}
                            }
 		} catch (e) {
