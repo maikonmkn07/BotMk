@@ -400,14 +400,14 @@ async function starts() {
 						reply(`Envie fotos com legendas ${prefix}sticker ou tags de imagem que já foram enviadas`)
 					}
 					case 'gtts':
-					if (args.length < 1) return client.sendMessage(from, 'Aguarde...⌛', text, {quoted: mek})
+					if (args.length < 1) return client.sendMessage(from, '⌛...', text, {quoted: mek})
 					const gtts = require('./lib/gtts')(args[0])
 					if (args.length < 2) return client.sendMessage(from, 'Onde está o texto?', text, {quoted: mek})
 					dtt = body.slice(9)
 					ranm = getRandom('.mp3')
 					rano = getRandom('.ogg')
 					dtt.length > 600
-					? reply('A maior parte do texto?')
+					? reply('Serio que quer q eu falo tudo isso? To com preguiça 😪')
 					: gtts.save(ranm, dtt, function() {
 						exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (err) => {
 							fs.unlinkSync(ranm)
@@ -641,7 +641,7 @@ async function starts() {
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += '\n\n'
 					for (let mem of groupMembers) {
-						teks += `✔️*#* @${mem.jid.split('@')[0]}\n`
+						teks += `✔️@${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
 					mentions(teks, members_id, true)
@@ -827,7 +827,7 @@ async function starts() {
 				case 'welcome':
 					if (args.length < 1) return reply('Hmmmm')
 					if (Number(args[0]) === 1) {
-						if (isWelkom) return reply('Já ativo um')
+						if (isWelkom) return reply('Já ta Ativo')
 						welkom.push(from)
 						fs.writeFileSync('./src/welkom.json', JSON.stringify(welkom))
 						reply('Ativou com sucesso o recurso de boas-vindas neste grupo ✔️')
