@@ -88,7 +88,7 @@ const menu2 = (prefix) => {
  *uso:* ${prefix}add 5544xxxxx*\n
  *Nota:* o bot precisa ser admin!\n
 
- *Comando: 👉${prefix}kick*
+ *Comando: 👉${prefix}ban*
  *Descrição:* remover membros do grupo
  *uso:* ${prefix}kick e o @da pessoa*\n
  *Nota:* Você precisa ser admin e o bot também

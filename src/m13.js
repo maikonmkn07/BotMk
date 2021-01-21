@@ -12,7 +12,13 @@ O que é Instagram Pro?
 
 Instagram Pro APK é o melhor Mod Insta para dispositivos Android. e este devlope por SamMods. A propósito, chega de preocupações. Temos todos os novos Instagram Pro para substituir o Outro Insta Mod nos aspectos de recursos e desempenho. Recentemente, o desenvolvedor lançou a versão mais recente baseada na Play Store Base.
 
-[Adicionado] Nova atualização de base 167.1.0.25.120
+Todos os bugs anteriores foram corrigidos
+[Base] Nova atualização de base 169.3.0.30.135
+[Corrigido] Problema de aquecimento
+[Corrigido] Consumo de bateria
+[ReCoded] ReCode Todos os Códigos InstaPro
+[Adicionado] Rebrand dos botões do Instagram
+Muitos outros problemas corrigidos.
 [Corrigido] Problemas de anúncios resolvidos
 [Adicionado] Pressione o botão de coração e mantenha-o pressionado para ver a lista de não seguidores está de volta
 [Corrigido] O botão do tema não funciona para alguns usuários RESOLVIDO
