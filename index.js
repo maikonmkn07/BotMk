@@ -229,6 +229,7 @@ async function starts() {
 					client.sendMessage(from, m03(prefix), text)
 					break
                 case 'm04':
+                case 'yx':
 					client.sendMessage(from, m04(prefix), text)
 					break
                 case 'm05':
@@ -241,21 +242,27 @@ async function starts() {
 					client.sendMessage(from, m07(prefix), text)
 					break
                 case 'm08':
+                case 'spotify':
 					client.sendMessage(from, m08(prefix), text)
 					break
                 case 'm09':
 					client.sendMessage(from, m09(prefix), text)
 					break
                 case 'm10':
+                case 'tiktok':
 					client.sendMessage(from, m10(prefix), text)
 					break
                 case 'm11':
+                case 'business':
 					client.sendMessage(from, m11(prefix), text)
 					break
                 case 'm12':
+                case 'youtube':
+                case 'vanced':
 					client.sendMessage(from, m12(prefix), text)
 					break
                 case 'm13':
+                case 'instagram':
 					client.sendMessage(from, m13(prefix), text)
 					break
                 case 'm14':
@@ -268,6 +275,7 @@ async function starts() {
 					client.sendMessage(from, m16(prefix), text)
 					break
                 case 'm17':
+                case 'figurinhas':
 					client.sendMessage(from, m17(prefix), text)
 					break					
                 case 'm18':
@@ -276,7 +284,7 @@ async function starts() {
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*Nome do bot* : ${me.name}\n*Número do bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}`
+					teks = `nome do bot : ${me.name}\n*numero do bot* : @${me.jid.split('@')[0]}\n*Sigla dos comandos* : ${prefix}\nNumeros bloqueados : ${blocked.length}\nO bot esta ativo desde : ${kyun(uptime)}\n`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
@@ -407,7 +415,7 @@ async function starts() {
 					ranm = getRandom('.mp3')
 					rano = getRandom('.ogg')
 					dtt.length > 600
-					? reply('Serio que quer q eu falo tudo isso? To com preguiça 😪')
+					? reply('Texto muito grande! To com preguiça 😪')
 					: gtts.save(ranm, dtt, function() {
 						exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (err) => {
 							fs.unlinkSync(ranm)
@@ -466,12 +474,12 @@ async function starts() {
 				case 'boatarde':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.imgur.com/JaO3yoV.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Boa tarde, rapeize 😎👍'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Boa tarde pessoal 😎👍'})
 					break
 				case 'boanoite':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.imgur.com/yOFxSUR.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Boa noite fml ❤️'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Boa noite fml 😴️'})
 					break
 				case 'belle':
 					memein = await kagApi.memeindo()
@@ -500,7 +508,7 @@ async function starts() {
 					break
 				case 'canal':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://imgur.com/gallery/xuTCBPO`)
+					buffer = await getBuffer(`Canal https://imgur.com/gallery/8dXxB1O`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️*Canal do MK:*\n\n https://linktr.ee/Gb_Yo_Yx_FmWhatsapp'})
 					break
 				case 'mia1':
@@ -743,7 +751,7 @@ async function starts() {
 						reply('Falha ao adicionar a pessoa, talvez seja porque é privado')
 					}
 					break
-				case 'kick':
+				case 'ban':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
