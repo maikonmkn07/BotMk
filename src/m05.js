@@ -6,12 +6,12 @@ const m05 = (prefix) => {
     ╚══════════════╝
 ━━━━━━━━━━━━━━━━━━━━━
 
-        *Aqui é o @bot* 🤳⚡
+        *Aqui é o .bot* 🤳⚡
 
 Sobre GBWhatsApp Pro v9.0 Alex Mods
 Assista:https://youtu.be/CJ1GK77DdmQ
 
-Para chamar o Menu digite: *@Bot*
+Para chamar o Menu digite: *.bot*
 
 ╠════════════════════
 ║    MAIKON

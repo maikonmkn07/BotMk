@@ -5,13 +5,13 @@ const m18 = (prefix) => {
         ✯ MK MODS ✯
     ╚══════════════╝
 ━━━━━━━━━━━━━━━━━━━━━
- 
-       *Aqui é o @bot* 🤳⚡
 
-Como aumentar o limite de encaminhar para mais de 5 pessoas:
-https://m.youtube.com/watch?v=gEGy-eTzzd0&feature=youtu.be#dialog
+       *Aqui é o .bot* 🤳⚡
 
-Para chamar o Menu digite: *@Bot*
+Grupo de Figurinhas: 
+https://chat.whatsapp.com/JBlKZT0aant4xKpCTZ4Id0
+
+Para chamar o Menu digite: *.bot*
 
 ╠════════════════════
 ║     MAIKON

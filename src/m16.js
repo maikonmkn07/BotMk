@@ -5,24 +5,13 @@ const m16 = (prefix) => {
         ✯ MK MODS ✯
     ╚══════════════╝
 ━━━━━━━━━━━━━━━━━━━━━
+ 
+       *Aqui é o .bot* 🤳⚡
 
-      *Aqui é o @bot* 🤳⚡
+Como aumentar o limite de encaminhar para mais de 5 pessoas:
+https://m.youtube.com/watch?v=gEGy-eTzzd0&feature=youtu.be#dialog
 
-Grupo de Comédia vídeos engraçados e de descontração.😂
-
-✅ _Grupo destinado a descontração! Serão bem vindos vídeos e fotos engraçados ou descontraidos._
-
-🚫 Proibido pornografia.
-
-🚫 Proibido anúncios.
-
-🚫 Proibido desrespeitar participante do grupo.
-
-👇
-https://chat.whatsapp.com/CJavGYAYI5YDHNXSiIaGCM
-
-
-Para chamar o Menu digite: *@Bot*
+Para chamar o Menu digite: *.bot*
 
 ╠════════════════════
 ║     MAIKON

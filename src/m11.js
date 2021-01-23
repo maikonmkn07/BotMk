@@ -7,7 +7,7 @@ const m11 = (prefix) => {
     ╚══════════════╝
 ━━━━━━━━━━━━━━━━━━━━━
    
-       *Aqui é o @bot* 🤳⚡
+       *Aqui é o .bot* 🤳⚡
 
      Whatsapp Business Mod
 
@@ -43,7 +43,7 @@ Status de copiar e colar.
 
 Adicionado mais suporte a arquivos de documentos pdf, xls, txt, doc, ppt, vcard, xlsx, txt, rtf, docx, pptx e zip. s   
 
-Para chamar o Menu digite: *@Bot*
+Para chamar o Menu digite: *.bot*
 
 ╠════════════════════
 ║     MAIKON

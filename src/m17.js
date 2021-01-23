@@ -6,12 +6,23 @@ const m17 = (prefix) => {
     ╚══════════════╝
 ━━━━━━━━━━━━━━━━━━━━━
 
-       *Aqui é o @bot* 🤳⚡
+      *Aqui é o .bot* 🤳⚡
 
-Grupo de Figurinhas: 
-https://chat.whatsapp.com/JBlKZT0aant4xKpCTZ4Id0
+Grupo de Comédia vídeos engraçados e de descontração.😂
 
-Para chamar o Menu digite: *@Bot*
+✅ _Grupo destinado a descontração! Serão bem vindos vídeos e fotos engraçados ou descontraidos._
+
+🚫 Proibido pornografia.
+
+🚫 Proibido anúncios.
+
+🚫 Proibido desrespeitar participante do grupo.
+
+👇
+https://chat.whatsapp.com/CJavGYAYI5YDHNXSiIaGCM
+
+
+Para chamar o Menu digite: *.bot*
 
 ╠════════════════════
 ║     MAIKON

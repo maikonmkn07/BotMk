@@ -56,7 +56,7 @@ const menu1 = (prefix) => {
  *Descrição:* Sobre Tag Scanner Pro
 
  *Comando: 👉${prefix}m16* 
- *Descrição:* Sobre Whatsapp Business Mods
+ *Descrição:* Aumentar o limite de encaminhar para mais de 5 pessoas
 
  *Comando: 👉${prefix}m17* 
  *Descrição:* Grupo de Comédia vídeos engraçados e de descontração.

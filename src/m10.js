@@ -7,7 +7,7 @@ const m10 = (prefix) => {
     ╚══════════════╝
 ━━━━━━━━━━━━━━━━━━━━━
 
-        *Aqui é o @bot* 🤳⚡
+        *Aqui é o .bot* 🤳⚡
 
     Tiktok Pro:
 
@@ -15,7 +15,7 @@ const m10 = (prefix) => {
 * Anúncios removidos.
 * Adicionado mais efeitos
 
-Para chamar o Menu digite: *@Bot*
+Para chamar o Menu digite: *.bot*
 
 ╠════════════════════
 ║     MAIKON

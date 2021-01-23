@@ -6,7 +6,7 @@ const m13 = (prefix) => {
     ╚══════════════╝
 ━━━━━━━━━━━━━━━━━━━━━
 
-       *Aqui é o @bot* 🤳⚡
+       *Aqui é o .bot* 🤳⚡
 
 O que é Instagram Pro?
 
@@ -30,7 +30,7 @@ Muitos outros problemas corrigidos.
 Muitos outros problemas corrigidos
 
 
-Para chamar o Menu digite: *@Bot*
+Para chamar o Menu digite: *.bot*
 
 ╠════════════════════
 ║     MAIKON

@@ -6,7 +6,7 @@ const m14 = (prefix) => {
     ╚══════════════╝
 ━━━━━━━━━━━━━━━━━━━━━
 
-       *Aqui é o @bot* 🤳⚡
+       *Aqui é o .bot* 🤳⚡
 
 Pulsar Music Player Pro:
 
@@ -35,7 +35,7 @@ O QUE HÁ DE NOVO
 ✓ Corrigido bug ao editar imagem de arte para arquivos flac.
 
 
-Para chamar o Menu digite: *@Bot*
+Para chamar o Menu digite: *.bot*
 
 ╠════════════════════
 ║     MAIKON

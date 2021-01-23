@@ -7,12 +7,12 @@ const m07 = (prefix) => {
     ╚══════════════╝
 ━━━━━━━━━━━━━━━━━━━━━
 
-         *Aqui é o @bot* 🤳⚡
+         *Aqui é o .bot* 🤳⚡
 
 Como Migrar pro GBWhatsApp sem perder as conversas
 Assista:https://youtu.be/ACkROwmCGc8
 
-Para chamar o Menu digite: *@Bot*
+Para chamar o Menu digite: *.bot*
 
 ╠════════════════════
 ║     MAIKON

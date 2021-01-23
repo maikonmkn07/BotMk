@@ -7,7 +7,7 @@ const m09 = (prefix) => {
     ╚══════════════╝
 ━━━━━━━━━━━━━━━━━━━━━
   
-        *Aqui é o @bot* 🤳⚡
+        *Aqui é o .bot* 🤳⚡
 
  *Sobre as mensagens temporárias*
 
@@ -25,7 +25,7 @@ Tire uma foto das mensagens temporárias com uma câmera ou outro aparelho antes
 Arquivos de mídia em mensagens temporárias
 Por padrão, os arquivos de mídia que você recebe no WhatsApp são automaticamente baixados para suas fotos. Caso as mensagens temporárias estejam ativadas, os arquivos de mídia enviados em uma conversa também desaparecerão, mas estarão salvos nos aparelhos que tenham o download automático ativado. Você pode desativar o download automático no WhatsApp em Configurações/Ajustes > Armazenamento e dados.
 
-Para chamar o Menu digite: *@Bot*
+Para chamar o Menu digite: *.bot*
 
 ╠════════════════════
 ║     MAIKON

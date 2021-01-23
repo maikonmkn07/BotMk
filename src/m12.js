@@ -7,7 +7,7 @@ const m12 = (prefix) => {
     ╚══════════════╝
 ━━━━━━━━━━━━━━━━━━━━━
 
-      *Aqui é o @bot* 🤳⚡
+      *Aqui é o .bot* 🤳⚡
 
  YouTube Vanced:
 
@@ -30,7 +30,7 @@ Também permite que você envie seus próprios segmentos para a API e contribua 
 Controle total para pular automaticamente uma categoria de segmento ou mostrar um botão para pular ou simplesmente não pular.
 Destaca o segmento na cor específica com base em sua categoria na linha do tempo de reprodução.
 
-Para chamar o Menu digite: *@Bot*
+Para chamar o Menu digite: *.bot*
 
 ╠════════════════════
 ║     MAIKON

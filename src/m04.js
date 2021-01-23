@@ -6,12 +6,12 @@ const m04 = (prefix) => {
     ╚══════════════╝
 ━━━━━━━━━━━━━━━━━━━━━
 
-          *Aqui é o @bot* 🤳⚡
+          *Aqui é o .bot* 🤳⚡
 
 Sobre Yxwhatsapp v8.72.2 Clebersonjr
 Assista:https://youtu.be/BEFnNhf2sZU
 
-Para chamar o Menu digite: *@Bot
+Para chamar o Menu digite: *.bot
 
 ╠════════════════════
 ║    MAIKON

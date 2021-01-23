@@ -6,11 +6,11 @@ const m06 = (prefix) => {
     ╚══════════════╝
 ━━━━━━━━━━━━━━━━━━━━━
 
-        *Aqui é o @bot* 🤳⚡
+        *Aqui é o .bot* 🤳⚡
 
 Sobre o Whatsapp Aero Hazar: https://youtu.be/i7tbAyqy7tk
 
-Para chamar o Menu digite: *@Bot*
+Para chamar o Menu digite: *.bot*
 
 ╠════════════════════
 ║    MAIKON

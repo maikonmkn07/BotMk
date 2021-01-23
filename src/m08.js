@@ -6,7 +6,7 @@ const m08 = (prefix) => {
     ╚══════════════╝
 ━━━━━━━━━━━━━━━━━━━━━
   
-        *Aqui é o @bot* 🤳⚡
+        *Aqui é o .bot* 🤳⚡
 
 Funções do Spotify da descrição
 
@@ -44,7 +44,7 @@ Remover todas as notificações premium
 Recursos não operacionais removidos
 Códigos Renovados
 
-Para chamar o Menu digite: *@Bot*
+Para chamar o Menu digite: *.bot*
 
 ╠════════════════════
 ║     MAIKON

@@ -6,7 +6,7 @@ const m02 = (prefix) => {
     ╚══════════════╝
 ━━━━━━━━━━━━━━━━━━━━━
 
-        *Aqui é o @bot* 🤳⚡
+        *Aqui é o .bot* 🤳⚡
 
 Não manda áudio, não baixa video,não baixa fotos e nem status...
 Assista:https://youtu.be/3HZCrI4fEd4
