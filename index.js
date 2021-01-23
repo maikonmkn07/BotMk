@@ -56,7 +56,7 @@ function kyun(seconds){
   var seconds = Math.floor(seconds % 60);
 
   //return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds)
-  return `${pad(hours)} Jam ${pad(minutes)} Menit ${pad(seconds)} Detik`
+  return `${pad(hours)} Hora ${pad(minutes)} Minuto ${pad(seconds)} Segundo`
 }
 
 async function starts() {
@@ -66,10 +66,7 @@ async function starts() {
 	client.on('qr', () => {
 		console.log(color('[','white'), color('!','red'), color(']','white'), color(' Scan the qr code above'))
 	})
-	client.on('credentials-updated', () => {
-		fs.writeFileSync('./BarBar.json', JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
-		info('2', 'Login Info Updated')
-	})
+
 	fs.existsSync('./BarBar.json') && client.loadAuthInfo('./BarBar.json')
 	client.on('connecting', () => {
 		start('2', 'Connecting...')
@@ -77,6 +74,9 @@ async function starts() {
 	client.on('open', () => {
 		success('2', 'Connected')
 	})
+	await client.connect({timeoutMs: 30*1000})
+        fs.writeFileSync('./BarBar.json', JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
+
 	client.on('group-participants-update', async (anu) => {
 		if (!welkom.includes(anu.jid)) return
 		try {
