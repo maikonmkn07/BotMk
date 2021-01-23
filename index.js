@@ -92,18 +92,14 @@ async function starts() {
 				teks = `
 🔰 Olá @${num.split('@')[0]}\n
 ✔️ Bem vindo! *${mdata.subject}*\n 
-✔️ O grupo possui *BOT*
-✔️ Não seja um Fantasma!
+✔️ O grupo possui *BOT*\n
+✔️ Não seja um Fantasma!\n
 				
-🚫 Proibido pornografia.
+🚫 Proibido pornografia.\n
+🚫 Proibido links fake.\n
+🚫 Proibido desrespeitar participante do grupo.\n
 
-🚫 Proibido anúncios.
-
-🚫 Proibido desrespeitar participante do grupo.
-
-🚫 Proibido outros links a não ser os do grupo.
-
-✔️ Dúvida chama o desenvolvedor https://bit.ly/2KgGUDv`
+✔️ Dúvida chama https://bit.ly/2KgGUDv`
 
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
@@ -115,7 +111,7 @@ async function starts() {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
 				teks = `
-📵 Saiu porque quiz, e nem pagou uma gelada 😂🍺.
+📵 Saiu porque quiz,\ne nem pagou a Coca 😂.\n
 
 👉 @${num.split('@')[0]}.Tchau! 😂👋`
 				let buff = await getBuffer(ppimg)
@@ -275,10 +271,10 @@ async function starts() {
 					client.sendMessage(from, m16(prefix), text)
 					break
                 case 'm17':
-                case 'figurinhas':
 					client.sendMessage(from, m17(prefix), text)
 					break					
                 case 'm18':
+                case 'figurinhas':
 					client.sendMessage(from, m18(prefix), text)
 					break				
 				case 'info':
