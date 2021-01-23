@@ -89,17 +89,11 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `
-🔰 Olá @${num.split('@')[0]}\n
-✔️ Bem vindo! *${mdata.subject}*\n 
-✔️ O grupo possui *BOT*\n
-✔️ Não seja um Fantasma!\n
-				
-🚫 Proibido pornografia.\n
-🚫 Proibido links fake.\n
-🚫 Proibido desrespeitar participante do grupo.\n
-
-✔️ Dúvida chama https://bit.ly/2KgGUDv`
+				teks = `🔰 Olá @${num.split('@')[0]}\n *Bem vindo ao grupo!* *${mdata.subject}*\n O grupo possui *BOT* pra chanar Menu, qualquer coisa so digitar: *.menu1* .Por favor não seja um Fantasma ❤
+🚫 Proibido links Fake.️			
+🚫 Proibido Pornografia.
+🚫 Proibido anúncios políticos.
+🚫 Proibido desrespeitar participante do grupo.`
 
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
@@ -111,7 +105,7 @@ async function starts() {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
 				teks = `
-📵 Saiu porque quiz,\ne nem pagou a Coca 😂.\n
+📵 Saiu porque quiz!\n😅 E nem pagou a Coca 😂.\n
 
 👉 @${num.split('@')[0]}.Tchau! 😂👋`
 				let buff = await getBuffer(ppimg)
