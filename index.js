@@ -89,10 +89,12 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `🔰 Olá @${num.split('@')[0]}\n *Bem vindo ao grupo!* *${mdata.subject}*\n O grupo possui *BOT* pra chanar Menu, qualquer coisa so digitar: *.menu1* .Por favor não seja um Fantasma ❤
-🚫 Proibido links Fake.️			
-🚫 Proibido Pornografia.
-🚫 Proibido anúncios políticos.
+				teks = `🔰 Olá @${num.split('@')[0]}\n *Bem vindo ao grupo!* *${mdata.subject}*\n O grupo possui *BOT* .Por favor não seja um Fantasma ❤
+				
+🚫 Proibido pornografia.
+
+🚫 Proibido anúncios Político.
+
 🚫 Proibido desrespeitar participante do grupo.`
 
 				let buff = await getBuffer(ppimg)
@@ -104,23 +106,13 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `
-📵 Saiu porque quiz!\n😅 E nem pagou a Coca 😂.\n
-
-👉 @${num.split('@')[0]}.Tchau! 😂👋`
+				teks = `Saiu porque quiz!\n👤@${num.split('@')[0]}. Tchau!👋👋👋`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
 		} catch (e) {
 			console.log('Error : %s', color(e, 'red'))
 		}
-	})
-
-	client.on('CB:Blocklist', json => {
-            if (blocked.length > 2) return
-	    for (let i of json[1].blocklist) {
-	    	blocked.push(i.replace('c.us','s.whatsapp.net'))
-	    }
 	})
 
 	client.on('chat-update', async (mek) => {
@@ -398,6 +390,7 @@ async function starts() {
 						reply(`Envie fotos com legendas ${prefix}sticker ou tags de imagem que já foram enviadas`)
 					}
 					case 'gtts':
+					case 'ts':
 					if (args.length < 1) return client.sendMessage(from, '⌛...', text, {quoted: mek})
 					const gtts = require('./lib/gtts')(args[0])
 					if (args.length < 2) return client.sendMessage(from, 'Onde está o texto?', text, {quoted: mek})
