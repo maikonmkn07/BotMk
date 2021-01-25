@@ -136,7 +136,7 @@ async function starts() {
 			const isCmd = body.startsWith(prefix)
 
 			mess = {
-				wait: '⌛ Bot Mk convertendo, aguarde um pouco... ⌛',
+				wait: '⌛ BotMk, Carregando... ⌛',
 				success: '✔️ Deu certo, ufa kk ✔️',
 				error: {
 					stick: '⚠️ Falha, ocorreu um erro ao converter a imagem em figurinha ⚠️',
@@ -295,6 +295,17 @@ async function starts() {
 						reply('Só uma foto')
 					}
 					break
+                case 'play':  
+                reply(mess.wait)
+                play = body.slice(5)
+                anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=apivinz`)
+               if (anu.error) return reply(anu.error)
+                 infomp3 = `*Canção encontrada!!!*\nJudul : ${anu.result.title}\nFonte : ${anu.result.source}\nTamanho : ${anu.result.size}\n\n*ESPERE ENVIANDO POR FAVOR, NÃO SPAM YA PAI*`
+                buffer = await getBuffer(anu.result.thumbnail)
+                lagu = await getBuffer(anu.result.url_audio)
+                client.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
+                client.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${anu.title}.mp3`, quoted: mek})
+                break
 				case 'stiker':
 				case 'sticker':
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
@@ -389,7 +400,7 @@ async function starts() {
 						reply(`Envie fotos com legendas ${prefix}sticker ou tags de imagem que já foram enviadas`)
 					}
 					case 'gtts':
-					if (args.length < 1) return client.sendMessage(from, '⌛...', text, {quoted: mek})
+					if (args.length < 1) return client.sendMessage(from, 'Se não for tente novamente⌛...', text, {quoted: mek})
 					const gtts = require('./lib/gtts')(args[0])
 					if (args.length < 2) return client.sendMessage(from, 'Onde está o texto?', text, {quoted: mek})
 					dtt = body.slice(9)
@@ -682,7 +693,7 @@ async function starts() {
 						reply('Transmissão enviada com sucesso')
 					}
 					break
-        case 'promote':
+           case 'promote':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
