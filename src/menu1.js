@@ -6,7 +6,7 @@ const menu1 = (prefix) => {
      ╚══════════════╝
 ━━━━━━━━━━━━━━━━━━━━━
 
-        *Aqui é o @bot* 🤳⚡
+        *Aqui é o bot* 🤳⚡
                
  👉Digite um dos comandos👈
 
@@ -68,7 +68,11 @@ const menu1 = (prefix) => {
  *Descrição:* Menu 2 com mais funções do Bot.
  
  *Digite a baixo o número desejado exemplo: *${prefix}m01* ou *${prefix}m02* ....👇
- ━━━━━━━━━━━━━━━━━━━━`
+ 
+     ╔════════════════════
+        FEITO POR *MAIKON*
+        WA.me/5544999013362
+     ╚════════════════════`
 }
 
 exports.menu1 = menu1
