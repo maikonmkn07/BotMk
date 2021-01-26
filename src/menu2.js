@@ -46,7 +46,6 @@ const menu2 = (prefix) => {
  *Comando: 👉${prefix}play*
  *Descrição:* Procura e baixa a musica
 
-
  *Comando: 👉${prefix}loli*
  *Descrição:* Mandar imagens aleatórias de loli
 
