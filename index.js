@@ -136,7 +136,7 @@ async function starts() {
 			const isCmd = body.startsWith(prefix)
 
 			mess = {
-				wait: '⌛ BotMk, Carregando... ⌛',
+				wait: '⌛ Bot Mk Carregando... ⌛',
 				success: '✔️ Deu certo, ufa kk ✔️',
 				error: {
 					stick: '⚠️ Falha, ocorreu um erro ao converter a imagem em figurinha ⚠️',
