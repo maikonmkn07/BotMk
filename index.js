@@ -300,7 +300,7 @@ async function starts() {
                 play = body.slice(5)
                 anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=apivinz`)
                if (anu.error) return reply(anu.error)
-                 infomp3 = `*Canção encontrada!!!* 🙌\n*Título:* ${anu.result.title}\n*Fonte:* ${anu.result.source}\n*Tamanho:* ${anu.result.size}\n\n*ESPERE! BOTMK ENVIANDO POR FAVOR* 😉`
+                 infomp3 = `*Canção encontrada!!!* 🙌\n*Título:* ${anu.result.title}\n*Fonte:* ${anu.result.source}\n*Tamanho:* ${anu.result.size}\n\n*ESPERE!\nBOT MK ESTÁ\nENVIANDO SUA MÚSICA*😉`
                 buffer = await getBuffer(anu.result.thumbnail)
                 lagu = await getBuffer(anu.result.url_audio)
                 client.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
@@ -426,7 +426,7 @@ async function starts() {
 				case 'porno':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx3BgnL2qAHDTlfCPMAvdjuLGvOx402dSdhw&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Adm proibiu porno no gp🙄'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Adm nao permite porno no gp🙄'})
 					break
 				case 'dono':
 					memein = await kagApi.memeindo()
