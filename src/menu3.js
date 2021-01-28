@@ -6,7 +6,7 @@ const menu3 = (prefix) => {
      ╚══════════════╝
 ━━━━━━━━━━━━━━━━━━━━━
 
-        *Aqui é o @bot* 🤳⚡
+        *Aqui é o bot* 🤳⚡
 
  *Comando:* ${prefix}marcar 
  *Comando:* ${prefix}marcar2 

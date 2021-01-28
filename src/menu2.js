@@ -92,7 +92,7 @@ const menu2 = (prefix) => {
 
  *Comando: 👉${prefix}ban*
  *Descrição:* Remover membros do grupo
- *uso:* ${prefix}kick e o @da pessoa*\n
+ *uso:* ${prefix}ban e o @da pessoa*\n
  *Nota:* Você precisa ser admin e o bot também
 
  *Comando: 👉${prefix}promote*
@@ -109,7 +109,7 @@ const menu2 = (prefix) => {
             *MAIKON*【✔】
      • ────── ✾ ────── •              
 
- Chama: *${prefix}.menu1 ou ${prefix}.menu2* ♔
+ Chama: *${prefix}menu1 ou ${prefix}menu2* ♔
     
 
     ╔════════════════════
